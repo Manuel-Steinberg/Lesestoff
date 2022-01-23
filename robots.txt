@@ -1,0 +1,8 @@
+User-agent: *
+Allow: *
+Disallow: /_assets/images/
+Disallow: /404.html
+Disallow: /impressum/
+Disallow: /datenschutz/
+Disallow: /agb/
+Disallow: /widerruf/

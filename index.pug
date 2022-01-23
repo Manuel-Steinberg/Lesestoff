@@ -1,0 +1,45 @@
+//- Meta
+- var meta_title = 'Webagentur kreativ-anders | Manuel Steinberg aus Nürnberg'
+- var meta_author = 'Manuel Steinberg'
+- var meta_description = 'Die Webagentur kreativ-anders | Manuel Steinberg steht für digital nachhaltige Prozessgestaltung, Webseiten &amp; SEO und kreatives Mediendesign.'
+
+include _snippets/header.pug
+include _snippets/hero.pug
+
+
+//- Book mixin
+include _mixins/book.pug
+
+//- Current book
+section.container#list
+  h2 Mein bisheriger Lesestoff:
+  article
+    +book("Emotional Intelligence", "Daniel Goleman", 2021, "", "", true)
+
+    //+book("Title", "Author", 2019, "Text") 
+    +book("How to Create a Mind", "Ray Kurzweil", 2019, "Sehr gutes Buch, das Mensch und IT verschmelzen lässt und die Grenzen der IT bei Artificial Intelligence beschreibt.") 
+    +book("How to Fail at Almost Everything and Still Win Big", "Scott Adams", 2019, "Unterhaltsam und gleichzeitig äußerst lehrreich.") 
+    +book("Factfulness", "Hans Rosling", 2019, "Dieses Buch hilft wahrhaftig die Welt aus einer neuen Perspektive zu betrachten!") 
+    +book("Anything You Want", "Derek Sivers", 2019, "Erfolgreich per Zufall? ... Eine sehr faszinierende Geschichte von Derek.") 
+    +book("Spam Nation", "Brian Krebs", 2019, "Spam-Mails sind zwar primitiv, allerdings auch sehr effektiv!") 
+    +book("The $100 Startup", "Kathleen Derrico", 2019, "Ein Start-Up braucht keine Finanzierungsrunden in Millionenhöhe. Start Small, Think Big!") 
+    +book("Die 4-Stunden-Woche", "Timothy Ferriss", 2018, "Warum sich das Leben schwer machen, wenn es auch einfach geht? Und das einfacher, als man denkt.") 
+    +book("Elon Musk", "Ashlee Vance", 2018, "Visionär, Entrepreneur und Innovator ... Einfach faszinierend.") 
+    +book("Zero to One", "Peter Thiel, Blake Masters", 2018, "Die Welt und die Technologie entwickelt sich schneller, als wir annehmen, dennoch ist es niemals zu spät für neue Innovationen.") 
+    +book("Tools der Titanen", "Timothy Ferriss", 2018, "Wie sind manche Menschen so erfolgreich geworden? Das Buch bietet eine mögliche Antwort.") 
+    +book("Software Architecture Patterns", "Mark Richards", 2018, "Eine neue (gehypte) Programmiersprache macht dich nicht zu einem besseren Programmierer!") 
+    +book("The Zero Marginal Cost Society", "Jeremy Rifkin", 2017, "Äußerst faszinierende Darstellung des Autors über die Welt der Zukunft, welche bereits möglich wäre.") 
+    +book("Business Process Re-engineering", "Giles Johnston", 2017, "Was tut man nicht alles für die Bachelorarbeit? (P.S. zu diesem Zeitpunkt wusste ich noch nicht einmal das ich über dieses Thema schreiben werde. Bis zu meiner Bachelorarbeit waren es noch 2 Semester.)") 
+    +book("The SaaS Startup Founder's Guide", "salesforce.com", 2017, "Folge den Spuren von erfolgreichen Start-Ups.") 
+    +book("The Lean Startup", "Eric Ries", 2017, "Ein MUST-READ für jeden Entrepreneur!") 
+    +book("Geld verdienen im Internet", "H. Feller", 2017, "Scheinbar geht das wirklich ...") 
+    +book("Mobile User Experience", "Adrian Mendoza", 2016, "Da gibt es deutlich bessere Bücher.") 
+    +book("Thinking, Fast and Slow", "Daniel Kahneman", 2016, "Klassiker, allerdings nicht gerade einfach zu lesen.") 
+    +book("Erfolgsfaktoren wirklich agiler Unternehmen", "Stefan Scherber", 2015, "Naja.") 
+    +book("Web Hacking", "Manuel Ziegler", 2015, "Nett.") 
+    +book("Pro PHP Security", "Chris Snyder, Thomas Myer, Michael Southwell", 2015, "...") 
+    +book("Scalable and Modular Architecture for CSS", "Jonathan Snook", 2014, "Gute Ansätze, allerdings nur bedingt effizient einsetzbar.")
+    +book("HTML5 Hacks", "Jesse Cravens, Jeff Burtoft", 2014, "Grundlegendes, was man über die moderne und attraktive Gestaltung von Websites wissen sollte.", "#")
+
+
+include _snippets/footer.pug

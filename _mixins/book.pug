@@ -1,0 +1,21 @@
+mixin book(title, author, year, feedback, affiliate="", current=false)
+
+  if current 
+    -var text="Wir gerade gelesen..."
+  else 
+    -var text=feedback
+  
+  details(open=current)
+    summary
+      strong=title 
+      small
+        i  von #{author}
+    p "#{text}" 
+
+      br
+      br
+      i=year
+      br
+      br
+      if affiliate
+        a(href=affiliate data-tooltip="Affiliate Link") Bei Amazon* kaufen.
