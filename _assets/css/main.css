@@ -15,8 +15,12 @@ header {
 
 h1 {
   padding: calc(var(--spacing)*2);
-  font-size: calc(var(--font-size)*2);
+  font-size: calc(var(--font-size)*1.5);
   color: white;
+}
+
+h2 {
+  font-size: calc(var(--font-size)*0.75);
 }
 
 section {
@@ -26,8 +30,4 @@ section {
 details p {
   padding-top: var(--spacing);
   padding-left: var(--spacing);
-}
-
-.container {
-  padding: 0 calc(var(--spacing)*4);
 }
