@@ -11,12 +11,12 @@ mixin book(title, author, year, feedback, affiliate="", current=false)
       br 
       small
         i  von #{author}
-    p "#{text}" 
+    p.comment "#{text}" 
 
       br
       br
-      i=year
+      i.year=year
       br
       br
       if affiliate
-        a(href=affiliate data-tooltip="Affiliate Link") Bei Amazon* kaufen.
+        a(href=affiliate class="affiliate" rel="noopener noreferrer" data-tooltip="Affiliate Link" target="_blank") Kaufe das Buch "#{title}" bei Amazon*.

@@ -31,3 +31,16 @@ details p {
   padding-top: var(--spacing);
   padding-left: var(--spacing);
 }
+
+i.year {
+  border-top: 1px solid #f5a000;
+  float: right;
+}
+
+p.comment {
+  text-align: center;
+}
+
+a.affiliate {
+  float: left;
+}
